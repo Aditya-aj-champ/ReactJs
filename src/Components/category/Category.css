@@ -1,0 +1,10 @@
+.category span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.category img {
+  width: 70px;
+  height: 70px;
+  /* background-color: aqua; */
+  justify-content: space-evenly;
+}

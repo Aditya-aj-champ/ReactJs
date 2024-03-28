@@ -1,0 +1,33 @@
+.card_container {
+  /* background-color: aqua; */
+  height: 400px;
+  width: 350px;
+  margin: 10px;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 2px solid black;
+  border: 30px;
+}
+
+.card img {
+  width: 145px;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+}
+.card-body1 {
+  background-color: azure;
+  height: 180px;
+  padding: 20px;
+}
+.Rating p {
+  float: right;
+  font-size: 12px;
+  font-weight: 600;
+}
+.countItems {
+  float: right;
+  font-size: 12px;
+  font-weight: 600;
+}
