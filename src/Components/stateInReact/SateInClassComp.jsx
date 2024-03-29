@@ -32,10 +32,12 @@ export default class SateInClassComp extends Component {
   increment = () => {
     // To update the count value we setState() method which is predefine
     let NewStates = { count: this.state.count + 1 };
-    this.setState(NewStates);
+    this.setState(NewStates, () => {
+      console.log(this.state.count);
+    });
     //    OR
     // this.setState({ count: this.state.count + 1 });
-    console.log(this.state.count);
+    // console.log(this.state.count);
   };
   // here is decrement fun
   decrement = () => {
@@ -43,7 +45,10 @@ export default class SateInClassComp extends Component {
       return this.count;
     }
     let NewStates = { count: this.state.count - 1 };
-    this.setState(NewStates);
+    // setState is asynchronous (synchronous refers to a blocking architecture where each operation depends on the previous one. Asynchronous refers to a non-blocking architecture where tasks can run simultaneously) so, we cant get the update value on console so i using a call by function for print the update value on console.
+    this.setState(NewStates, () => {
+      console.log(this.state.count);
+    });
   };
   render() {
     return (

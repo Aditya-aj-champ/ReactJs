@@ -4,7 +4,9 @@ import FunctionalPropes from "../propes/FunctionalPropes";
 import MyModel from "../propsChildren/MyModel";
 import PropsChildren from "../propsChildren/PropsChildren";
 import SateInClassComp from "../stateInReact/SateInClassComp";
+import ShowHidePassword from "../stateInReact/ShowHidePassword";
 import StateFunComp from "../stateInReact/StateFunComp";
+import SweetAlertDemo1 from "../sweetAlert/SweetAlertDemo1";
 
 export default function Center() {
   return (
@@ -30,6 +32,9 @@ export default function Center() {
       <SateInClassComp />
       <hr />
       <StateFunComp />
+      <hr />
+      <ShowHidePassword />
+      <SweetAlertDemo1 />
     </>
   );
 }

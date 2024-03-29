@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function StateFunComp() {
   // How to declare a state variable
@@ -7,6 +7,9 @@ export default function StateFunComp() {
   const increment = () => {
     setCountt(counter + 1);
     //console.log(counter);
+    useEffect(() => {
+      console.log(counter);
+    });
   };
   // Here is decrement fun
   const decrement = () => {
