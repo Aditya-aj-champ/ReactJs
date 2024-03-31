@@ -1,5 +1,6 @@
 // import React from "react";
 
+import EmpCURD from "../empCURDoperation/EmpCURD";
 import FunctionalPropes from "../propes/FunctionalPropes";
 import MyModel from "../propsChildren/MyModel";
 import PropsChildren from "../propsChildren/PropsChildren";
@@ -35,6 +36,8 @@ export default function Center() {
       <hr />
       <ShowHidePassword />
       <SweetAlertDemo1 />
+      <hr />
+      <EmpCURD />
     </>
   );
 }
