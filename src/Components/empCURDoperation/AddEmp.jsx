@@ -9,7 +9,7 @@ export default function AddEmp({ addEmp }) {
   const addData = (e) => {
     if (e.target.name === "eId") {
       setEmpID(e.target.value);
-    } else if (e.target.name === "eName") {
+    } else if (e.target.name === "Name") {
       setEmpName(e.target.value);
     } else {
       setEmpSalary(e.target.value);
@@ -34,7 +34,7 @@ export default function AddEmp({ addEmp }) {
               <input
                 type="text"
                 className="form-control"
-                name="ed"
+                name="eId"
                 placeholder="Employee Id"
                 onChange={addData}
               />
@@ -50,9 +50,9 @@ export default function AddEmp({ addEmp }) {
             </label>
             <div className="col-sm-9">
               <input
-                type="text"
+                type="string"
                 className="form-control"
-                name="eName"
+                name="Name"
                 placeholder="Employee Name"
                 onChange={addData}
               />
@@ -76,20 +76,20 @@ export default function AddEmp({ addEmp }) {
               />
             </div>
           </div>
-          <button
-            className="btn btn-success m-8"
-            onClick={() => {
-              let empObj = {
-                eId: empId,
-                name: empName,
-                sal: empSalary,
-              };
-              addEmp(empObj);
-            }}
-          >
-            Add
-          </button>
         </form>
+        <button
+          className="btn btn-success m-8"
+          onClick={() => {
+            let empObj = {
+              eId: empId,
+              Name: empName,
+              sal: empSalary,
+            };
+            addEmp(empObj);
+          }}
+        >
+          Add
+        </button>
       </div>
     </>
   );
