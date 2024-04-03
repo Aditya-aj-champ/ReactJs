@@ -1,9 +1,11 @@
 // import React from "react";
 
 import EmpCURD from "../empCURDoperation/EmpCURD";
+import MemoComponent1 from "../memoComponent/MemoComponent1";
 import FunctionalPropes from "../propes/FunctionalPropes";
 import MyModel from "../propsChildren/MyModel";
 import PropsChildren from "../propsChildren/PropsChildren";
+import ClassPureComp from "../pureComponent/ClassPureComp";
 import SateInClassComp from "../stateInReact/SateInClassComp";
 import ShowHidePassword from "../stateInReact/ShowHidePassword";
 import StateFunComp from "../stateInReact/StateFunComp";
@@ -38,6 +40,9 @@ export default function Center() {
       <SweetAlertDemo1 />
       <hr />
       <EmpCURD />
+      <hr />
+      {/* <ClassPureComp /> */}
+      <MemoComponent1 />
     </>
   );
 }
