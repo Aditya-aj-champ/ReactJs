@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import "./Carousel.css";
 export default function Carousel() {
   return (
@@ -13,6 +13,7 @@ export default function Carousel() {
             aria-current="true"
             aria-label="Slide 1"
           ></button>
+{/*            ------------------------------------------- */}
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
@@ -69,6 +70,7 @@ export default function Carousel() {
             </div> */}
           </div>
         </div>
+{/*         ----------------------------------------------------------------------- */}
         <button
           className="carousel-control-prev"
           type="button"
@@ -81,6 +83,7 @@ export default function Carousel() {
           ></span>
           <span className="visually-hidden">Previous</span>
         </button>
+      
         <button
           className="carousel-control-next"
           type="button"
